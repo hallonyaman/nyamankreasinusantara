@@ -10,30 +10,30 @@
   },
   "projects": [
     {
-      "title_id": "Corporate Branding & Installation",
-      "title_en": "Corporate Branding & Installation",
-      "client": "Sample Client",
-      "show_client": false,
-      "category": "Creative, Branding & Advertising",
-      "location": "Surabaya, Jawa Timur",
-      "date": "2026-10",
-      "description_id": "Contoh tampilan proyek. Nantinya dapat diganti melalui dashboard admin.",
+      "title_id": "Teras Adem Aqua",
+      "client": "Aqua",
       "description_en": "Sample project display. This can later be replaced through the admin dashboard.",
-      "cover": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=85",
-      "featured": true
+      "show_client": false,
+      "featured": true,
+      "date": "2026-10",
+      "title_en": "Teras Adem Aqua",
+      "location": "Surabaya, Jawa Timur",
+      "cover": "/uploads/whatsapp-image-2026-10-01-at-11.48.15.jpeg",
+      "description_id": "Contoh tampilan proyek. Nantinya dapat diganti melalui dashboard admin.",
+      "category": "Creative, Branding & Advertising"
     },
     {
       "title_id": "Corporate Event Support",
-      "title_en": "Corporate Event Support",
       "client": "Sample Client",
-      "show_client": false,
-      "category": "Event, MICE & Hospitality",
-      "location": "Surabaya, Jawa Timur",
-      "date": "2026-09",
-      "description_id": "Contoh dokumentasi aktivitas event korporat.",
       "description_en": "Sample corporate event activity documentation.",
+      "show_client": false,
+      "featured": true,
+      "date": "2026-09",
+      "title_en": "Corporate Event Support",
+      "location": "Surabaya, Jawa Timur",
       "cover": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1600&q=85",
-      "featured": true
+      "description_id": "Contoh dokumentasi aktivitas event korporat.",
+      "category": "Event, MICE & Hospitality"
     }
   ]
 }
