@@ -3,132 +3,377 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>CV Nyaman Kreasi Nusantara | One Partner. Many Solutions.</title>
-  <meta name="description" content="Integrated procurement, creative, event, digital, facility and operational business solutions from CV Nyaman Kreasi Nusantara.">
+
+  <meta name="description"
+        content="Integrated procurement, creative, event, digital, facility and operational business solutions from CV Nyaman Kreasi Nusantara.">
+
+  <!-- MONTSERRAT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+  <!-- TAILWIND -->
   <script src="https://cdn.tailwindcss.com"></script>
+
   <script>
     tailwind.config = {
-      theme: { extend: {
-        colors: {
-          nyaman: {
-            navy:'#0B2546', dark:'#061A32', darker:'#041426',
-            gold:'#C9A46A', goldLight:'#E3C99D',
-            ivory:'#F7F5F1', soft:'#F4F6F8',
-            body:'#26384A', muted:'#667085'
+      theme: {
+        extend: {
+          colors: {
+            nyaman: {
+              navy: '#0B2546',
+              dark: '#061A32',
+              darker: '#041426',
+              gold: '#C9A46A',
+              goldLight: '#E3C99D',
+              ivory: '#F7F5F1',
+              soft: '#F4F6F8',
+              body: '#26384A',
+              muted: '#667085'
+            }
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif']
           }
-        },
-        fontFamily:{ sans:['Montserrat','sans-serif'] }
-      }}
+        }
+      }
     }
   </script>
+
   <style>
-    html{scroll-behavior:smooth}
-    body{font-family:Montserrat,sans-serif}
-    .nav-link{position:relative}
-    .nav-link:after{content:"";position:absolute;left:0;bottom:-7px;width:0;height:2px;background:#C9A46A;transition:.3s}
-    .nav-link:hover:after{width:100%}
-    .project-card img{transition:transform .7s ease}
-    .project-card:hover img{transform:scale(1.04)}
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      width: 0;
+      height: 2px;
+      background: #C9A46A;
+      transition: .3s;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .project-card img {
+      transition: transform .7s ease;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.04);
+    }
   </style>
 </head>
+
 <body class="bg-white text-nyaman-body antialiased">
 
-<nav class="fixed inset-x-0 top-0 z-50 bg-nyaman-dark/95 backdrop-blur-xl border-b border-white/10">
-  <div class="max-w-7xl mx-auto px-6 lg:px-8 h-[82px] flex items-center justify-between">
-    <a href="#home" class="text-white font-extrabold text-xl tracking-[.18em]">NYAMAN<span class="text-nyaman-gold">.</span></a>
-    <div class="hidden lg:flex items-center gap-8 text-[12px] font-semibold tracking-[.06em] text-white/80">
-      <a href="#home" class="nav-link" data-id="nav_home">BERANDA</a>
-      <a href="#about" class="nav-link" data-id="nav_about">TENTANG</a>
-      <a href="#solutions" class="nav-link" data-id="nav_solutions">SOLUSI</a>
-      <a href="#projects" class="nav-link" data-id="nav_projects">PROYEK</a>
-      <a href="#contact" class="nav-link" data-id="nav_contact">KONTAK</a>
-    </div>
-    <div class="flex items-center gap-3">
-      <div class="flex border border-white/20 rounded-full p-1 text-[11px] font-bold">
-        <button id="lang-id" class="px-3 py-1.5 rounded-full bg-white text-nyaman-dark">ID</button>
-        <button id="lang-en" class="px-3 py-1.5 rounded-full text-white">EN</button>
-      </div>
-      <a href="#contact" class="hidden md:inline-flex bg-nyaman-gold text-nyaman-dark px-5 py-3 text-[11px] font-bold tracking-[.06em]" data-id="cta_nav">DISKUSIKAN KEBUTUHAN</a>
-    </div>
-  </div>
-</nav>
+  <!-- NAVIGATION -->
+  <nav class="fixed inset-x-0 top-0 z-50 bg-nyaman-dark/95 backdrop-blur-xl border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 h-[82px] flex items-center justify-between">
 
-<header id="home" class="relative min-h-screen flex items-center bg-nyaman-darker overflow-hidden">
-  <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2200&q=90" alt="NYAMAN business environment" class="absolute inset-0 w-full h-full object-cover opacity-45">
-  <div class="absolute inset-0 bg-gradient-to-r from-nyaman-darker via-nyaman-dark/90 to-nyaman-dark/20"></div>
-  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full pt-24">
-    <div class="max-w-3xl">
-      <div class="flex items-center gap-4 mb-7"><span class="w-10 h-[2px] bg-nyaman-gold"></span><p class="text-nyaman-goldLight text-xs md:text-sm tracking-[.22em] uppercase font-semibold">One Partner. Many Solutions.</p></div>
-      <h1 class="text-white text-[48px] sm:text-6xl md:text-7xl lg:text-[82px] font-black tracking-[-.04em] leading-[.98] mb-8">
-        <span data-id="hero_1">BUTUH APA?</span><br><span class="text-nyaman-gold" data-id="hero_2">NYAMAN AJA.</span>
-      </h1>
-      <p class="text-white/75 text-base md:text-lg leading-8 max-w-2xl mb-10" data-id="hero_desc">
-        Solusi bisnis terintegrasi untuk procurement, creative, event, digital, facility services dan operational support — dikelola melalui satu partner yang dapat diandalkan.
+      <a href="#home"
+         class="text-white font-extrabold text-xl tracking-[.18em]">
+        NYAMAN<span class="text-nyaman-gold">.</span>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-8 text-[12px] font-semibold tracking-[.06em] text-white/80">
+        <a href="#home" class="nav-link" data-id="nav_home">BERANDA</a>
+        <a href="#about" class="nav-link" data-id="nav_about">TENTANG</a>
+        <a href="#solutions" class="nav-link" data-id="nav_solutions">SOLUSI</a>
+        <a href="#projects" class="nav-link" data-id="nav_projects">PROYEK</a>
+        <a href="#contact" class="nav-link" data-id="nav_contact">KONTAK</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+
+        <div class="flex border border-white/20 rounded-full p-1 text-[11px] font-bold">
+          <button id="lang-id"
+                  class="px-3 py-1.5 rounded-full bg-white text-nyaman-dark">
+            ID
+          </button>
+
+          <button id="lang-en"
+                  class="px-3 py-1.5 rounded-full text-white">
+            EN
+          </button>
+        </div>
+
+        <a href="#contact"
+           class="hidden md:inline-flex bg-nyaman-gold text-nyaman-dark px-5 py-3 text-[11px] font-bold tracking-[.06em]"
+           data-id="cta_nav">
+          DISKUSIKAN KEBUTUHAN
+        </a>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home"
+          class="relative min-h-screen flex items-center bg-nyaman-darker overflow-hidden">
+
+    <img
+      src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2200&q=90"
+      alt="NYAMAN business environment"
+      class="absolute inset-0 w-full h-full object-cover opacity-45">
+
+    <div class="absolute inset-0 bg-gradient-to-r from-nyaman-darker via-nyaman-dark/90 to-nyaman-dark/20"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full pt-24">
+      <div class="max-w-3xl">
+
+        <div class="flex items-center gap-4 mb-7">
+          <span class="w-10 h-[2px] bg-nyaman-gold"></span>
+
+          <p class="text-nyaman-goldLight text-xs md:text-sm tracking-[.22em] uppercase font-semibold">
+            One Partner. Many Solutions.
+          </p>
+        </div>
+
+        <h1 class="text-white text-[48px] sm:text-6xl md:text-7xl lg:text-[82px] font-black tracking-[-.04em] leading-[.98] mb-8">
+          <span data-id="hero_1">BUTUH APA?</span>
+          <br>
+          <span class="text-nyaman-gold" data-id="hero_2">NYAMAN AJA.</span>
+        </h1>
+
+        <p class="text-white/75 text-base md:text-lg leading-8 max-w-2xl mb-10"
+           data-id="hero_desc">
+          Solusi bisnis terintegrasi untuk procurement, creative, event, digital,
+          facility services dan operational support — dikelola melalui satu partner
+          yang dapat diandalkan.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+
+          <a href="#solutions"
+             class="bg-nyaman-gold text-nyaman-dark px-8 py-4 font-bold text-xs tracking-[.08em] text-center"
+             data-id="cta_solutions">
+            LIHAT SOLUSI KAMI
+          </a>
+
+          <a href="#projects"
+             class="border border-white/30 text-white px-8 py-4 font-semibold text-xs tracking-[.08em] text-center hover:bg-white hover:text-nyaman-dark transition"
+             data-id="cta_projects">
+            LIHAT PEKERJAAN KAMI
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about"
+           class="py-24 md:py-32 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-14 lg:gap-24 items-center">
+
+      <div>
+        <p class="text-nyaman-gold font-bold text-xs tracking-[.18em] uppercase mb-5">
+          The Nyaman Way
+        </p>
+
+        <h2 class="text-nyaman-navy text-4xl md:text-5xl font-extrabold leading-[1.12] tracking-[-.03em]">
+          <span data-id="about_h1">FOKUS PADA BISNIS ANDA.</span>
+          <br>
+          <span class="text-nyaman-gold" data-id="about_h2">
+            KAMI HADIRKAN SOLUSINYA.
+          </span>
+        </h2>
+      </div>
+
+      <p class="text-nyaman-muted text-base md:text-lg leading-8"
+         data-id="about_desc">
+        NYAMAN menyederhanakan kebutuhan bisnis dengan menggabungkan sourcing,
+        koordinasi, eksekusi dan delivery dalam satu partnership yang terintegrasi.
       </p>
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="#solutions" class="bg-nyaman-gold text-nyaman-dark px-8 py-4 font-bold text-xs tracking-[.08em] text-center" data-id="cta_solutions">LIHAT SOLUSI KAMI</a>
-        <a href="#projects" class="border border-white/30 text-white px-8 py-4 font-semibold text-xs tracking-[.08em] text-center hover:bg-white hover:text-nyaman-dark transition" data-id="cta_projects">LIHAT PEKERJAAN KAMI</a>
+
+    </div>
+  </section>
+
+  <!-- SOLUTIONS -->
+  <section id="solutions"
+           class="py-24 md:py-32 bg-nyaman-ivory">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+      <p class="text-nyaman-gold font-bold text-xs tracking-[.18em] uppercase mb-4"
+         data-id="solutions_kicker">
+        APA YANG KAMI KERJAKAN
+      </p>
+
+      <h2 class="text-nyaman-navy text-4xl md:text-5xl font-extrabold tracking-[-.03em] mb-14">
+        ONE PARTNER.
+        <br>
+        MANY SOLUTIONS.
+      </h2>
+
+      <div id="solutions-grid"
+           class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       </div>
+
     </div>
-  </div>
-</header>
+  </section>
 
-<section id="about" class="py-24 md:py-32 bg-white">
-  <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-14 lg:gap-24 items-center">
-    <div>
-      <p class="text-nyaman-gold font-bold text-xs tracking-[.18em] uppercase mb-5">The Nyaman Way</p>
-      <h2 class="text-nyaman-navy text-4xl md:text-5xl font-extrabold leading-[1.12] tracking-[-.03em]"><span data-id="about_h1">FOKUS PADA BISNIS ANDA.</span><br><span class="text-nyaman-gold" data-id="about_h2">KAMI HADIRKAN SOLUSINYA.</span></h2>
+  <!-- PROJECTS -->
+  <section id="projects"
+           class="py-24 md:py-32 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+      <p class="text-nyaman-gold font-bold text-xs tracking-[.18em] uppercase mb-4">
+        OUR WORK
+      </p>
+
+      <h2 class="text-nyaman-navy text-4xl md:text-5xl font-extrabold tracking-[-.03em] mb-14"
+          data-id="projects_title">
+        PEKERJAAN YANG BERBICARA.
+      </h2>
+
+      <div id="projects-grid"
+           class="grid md:grid-cols-2 gap-6">
+      </div>
+
     </div>
-    <p class="text-nyaman-muted text-base md:text-lg leading-8" data-id="about_desc">NYAMAN menyederhanakan kebutuhan bisnis dengan menggabungkan sourcing, koordinasi, eksekusi dan delivery dalam satu partnership yang terintegrasi.</p>
-  </div>
-</section>
+  </section>
 
-<section id="solutions" class="py-24 md:py-32 bg-nyaman-ivory">
-  <div class="max-w-7xl mx-auto px-6 lg:px-8">
-    <p class="text-nyaman-gold font-bold text-xs tracking-[.18em] uppercase mb-4" data-id="solutions_kicker">APA YANG KAMI KERJAKAN</p>
-    <h2 class="text-nyaman-navy text-4xl md:text-5xl font-extrabold tracking-[-.03em] mb-14">ONE PARTNER.<br>MANY SOLUTIONS.</h2>
-    <div id="solutions-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-  </div>
-</section>
+  <!-- CONTACT -->
+  <section id="contact"
+           class="bg-nyaman-navy text-white py-24">
 
-<section id="projects" class="py-24 md:py-32 bg-white">
-  <div class="max-w-7xl mx-auto px-6 lg:px-8">
-    <p class="text-nyaman-gold font-bold text-xs tracking-[.18em] uppercase mb-4">OUR WORK</p>
-    <h2 class="text-nyaman-navy text-4xl md:text-5xl font-extrabold tracking-[-.03em] mb-14" data-id="projects_title">PEKERJAAN YANG BERBICARA.</h2>
-    <div id="projects-grid" class="grid md:grid-cols-2 gap-6"></div>
-  </div>
-</section>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16">
 
-<section id="contact" class="bg-nyaman-navy text-white py-24">
-  <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16">
-    <div>
-      <p class="text-nyaman-goldLight font-bold text-xs tracking-[.18em] uppercase mb-5">LET'S WORK TOGETHER</p>
-      <h2 class="text-4xl md:text-5xl font-extrabold tracking-[-.03em] leading-tight"><span data-id="contact_h1">PUNYA KEBUTUHAN BISNIS?</span><br><span class="text-nyaman-gold">NYAMAN AJA.</span></h2>
+      <div>
+
+        <p class="text-nyaman-goldLight font-bold text-xs tracking-[.18em] uppercase mb-5">
+          LET'S WORK TOGETHER
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-extrabold tracking-[-.03em] leading-tight">
+          <span data-id="contact_h1">
+            PUNYA KEBUTUHAN BISNIS?
+          </span>
+          <br>
+          <span class="text-nyaman-gold">
+            NYAMAN AJA.
+          </span>
+        </h2>
+
+      </div>
+
+      <div class="space-y-6 text-sm">
+
+        <div>
+          <p class="text-white/50 mb-1">
+            Email
+          </p>
+
+          <a href="mailto:hallonyaman@gmail.com"
+             class="font-semibold">
+            hallonyaman@gmail.com
+          </a>
+        </div>
+
+        <div>
+          <p class="text-white/50 mb-1">
+            WhatsApp
+          </p>
+
+          <a href="https://wa.me/62818595758?text=Halo%20Tim%20NYAMAN%2C%20saya%20ingin%20mendapatkan%20informasi%20mengenai%20solusi%20untuk%20kebutuhan%20perusahaan%20kami."
+             target="_blank"
+             rel="noopener"
+             class="font-semibold">
+            0818 595 758
+          </a>
+        </div>
+
+        <div>
+          <p class="text-white/50 mb-1"
+             data-id="location_label">
+            Lokasi
+          </p>
+
+          <p id="location-text">
+            Surabaya, Jawa Timur, Indonesia
+          </p>
+        </div>
+
+      </div>
+
     </div>
-    <div class="space-y-6 text-sm">
-      <div><p class="text-white/50 mb-1">Email</p><a href="mailto:hallonyaman@gmail.com" class="font-semibold">hallonyaman@gmail.com</a></div>
-      <div><p class="text-white/50 mb-1">WhatsApp</p><a href="https://wa.me/62818595758?text=Halo%20Tim%20NYAMAN%2C%20saya%20ingin%20mendapatkan%20informasi%20mengenai%20solusi%20untuk%20kebutuhan%20perusahaan%20kami." target="_blank" rel="noopener" class="font-semibold">0818 595 758</a></div>
-      <div><p class="text-white/50 mb-1" data-id="location_label">Lokasi</p><p id="location-text">Surabaya, Jawa Timur, Indonesia</p></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-nyaman-darker text-white py-10">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row gap-4 justify-between text-xs text-white/50">
+
+      <div>
+        <span class="font-extrabold tracking-[.14em] text-white">
+          NYAMAN<span class="text-nyaman-gold">.</span>
+        </span>
+
+        <span class="ml-3">
+          CV Nyaman Kreasi Nusantara
+        </span>
+      </div>
+
+      <p>
+        One Partner. Many Solutions.
+      </p>
+
     </div>
-  </div>
-</section>
 
-<footer class="bg-nyaman-darker text-white py-10">
-  <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row gap-4 justify-between text-xs text-white/50">
-    <div><span class="font-extrabold tracking-[.14em] text-white">NYAMAN<span class="text-nyaman-gold">.</span></span><span class="ml-3">CV Nyaman Kreasi Nusantara</span></div>
-    <p>One Partner. Many Solutions.</p>
-  </div>
-</footer>
+  </footer>
 
-<a href="https://wa.me/62818595758?text=Halo%20Tim%20NYAMAN%2C%20saya%20ingin%20mendapatkan%20informasi%20mengenai%20solusi%20untuk%20kebutuhan%20perusahaan%20kami."
-   target="_blank" rel="noopener" aria-label="Chat WhatsApp NYAMAN"
-   class="fixed z-50 right-5 bottom-5 bg-[#25D366] text-white rounded-full shadow-xl px-5 py-4 font-bold text-sm hover:scale-105 transition">
-  WhatsApp
-</a>
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/62818595758?text=Hallo%20NYAMAN%2C%20saya%20ingin%20mendapatkan%20informasi%20mengenai%20solusi%20untuk%20kebutuhan%20perusahaan%20kami."
+     target="_blank"
+     rel="noopener"
+     aria-label="Chat WhatsApp NYAMAN"
+     class="fixed z-50 right-5 bottom-5 bg-[#25D366] text-white rounded-full shadow-xl px-5 py-4 font-bold text-sm hover:scale-105 transition">
+    WhatsApp
+  </a>
 
-<script src="/app.js"></script>
+  <!-- WEBSITE JS -->
+  <script src="/app.js"></script>
+
+  <!-- NETLIFY IDENTITY -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  <script>
+    if (window.netlifyIdentity) {
+
+      window.netlifyIdentity.on("init", user => {
+
+        if (!user) {
+
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+
+        }
+
+      });
+
+    }
+  </script>
+
 </body>
 </html>
