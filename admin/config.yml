@@ -53,5 +53,39 @@ collections:
               - { label: "Project Date", name: "date", widget: "datetime", format: "YYYY-MM", date_format: "MMMM YYYY", time_format: false }
               - { label: "Description (ID)", name: "description_id", widget: "text" }
               - { label: "Description (EN)", name: "description_en", widget: "text" }
+              - { label: "Project Title (ID)", name: "title_id", widget: "string" }
+              - { label: "Project Title (EN)", name: "title_en", widget: "string" }
+              - { label: "Client", name: "client", widget: "string", required: false }
+              - { label: "Show Client Name", name: "show_client", widget: "boolean", default: false }
+
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - "General Procurement & Trading"
+                  - "Creative, Branding & Advertising"
+                  - "Event, MICE & Hospitality"
+                  - "Digital & Technology Solutions"
+                  - "Facility, Manpower & Operational Support"
+                  - "Project & Technical Support"
+
+              - { label: "Location", name: "location", widget: "string" }
+
+              - { label: "Project Date", name: "date", widget: "datetime", format: "YYYY-MM", date_format: "MMMM YYYY", time_format: false }
+
+              - { label: "Description (ID)", name: "description_id", widget: "text" }
+
+              - { label: "Description (EN)", name: "description_en", widget: "text" }
+
               - { label: "Cover Photo", name: "cover", widget: "image" }
+
+              - label: "Project Gallery"
+                name: "gallery"
+                widget: "list"
+                required: false
+                field:
+                  label: "Photo"
+                  name: "photo"
+                  widget: "image"
+
               - { label: "Featured", name: "featured", widget: "boolean", default: true }
