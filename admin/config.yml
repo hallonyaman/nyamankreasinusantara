@@ -1,0 +1,57 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+site_url: "https://nyamankreasinusantara.netlify.app"
+display_url: "https://nyamankreasinusantara.netlify.app"
+logo_url: ""
+
+collections:
+  - name: "website"
+    label: "NYAMAN Website"
+    files:
+      - name: "site"
+        label: "Projects & Company"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - label: "Company"
+            name: "company"
+            widget: "object"
+            fields:
+              - { label: "Company Name", name: "name", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "WhatsApp Display", name: "whatsapp_display", widget: "string" }
+              - { label: "WhatsApp Number", name: "whatsapp_number", widget: "string" }
+              - { label: "Location ID", name: "location_id", widget: "string" }
+              - { label: "Location EN", name: "location_en", widget: "string" }
+
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            summary: "{{fields.title_id}} — {{fields.location}}"
+            fields:
+              - { label: "Project Title (ID)", name: "title_id", widget: "string" }
+              - { label: "Project Title (EN)", name: "title_en", widget: "string" }
+              - { label: "Client", name: "client", widget: "string", required: false }
+              - { label: "Show Client Name", name: "show_client", widget: "boolean", default: false }
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - "General Procurement & Trading"
+                  - "Creative, Branding & Advertising"
+                  - "Event, MICE & Hospitality"
+                  - "Digital & Technology Solutions"
+                  - "Facility, Manpower & Operational Support"
+                  - "Project & Technical Support"
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Project Date", name: "date", widget: "datetime", format: "YYYY-MM", date_format: "MMMM YYYY", time_format: false }
+              - { label: "Description (ID)", name: "description_id", widget: "text" }
+              - { label: "Description (EN)", name: "description_en", widget: "text" }
+              - { label: "Cover Photo", name: "cover", widget: "image" }
+              - { label: "Featured", name: "featured", widget: "boolean", default: true }
