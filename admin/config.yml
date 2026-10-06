@@ -41,8 +41,8 @@ collections:
                 name: "email"
                 widget: "string"
 
-              - label: "WhatsApp Display"
-                name: "whatsapp_display"
+              - label: "WhatsApp Number"
+                name: "whatsapp_number"
                 widget: "string"
 
               - label: "WhatsApp Number"
