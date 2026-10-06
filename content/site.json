@@ -3,10 +3,13 @@
     "name": "CV Nyaman Kreasi Nusantara",
     "tagline": "One Partner. Many Solutions.",
     "email": "hallonyaman@gmail.com",
-    "whatsapp_display": "0818 595 758",
     "whatsapp_number": "62818595758",
     "location_id": "Surabaya, Jawa Timur, Indonesia",
-    "location_en": "Surabaya, East Java, Indonesia"
+    "location_en": "Surabaya, East Java, Indonesia",
+    "instagram_handle": "@hallonyaman.id",
+    "instagram_url": "https://www.instagram.com/hallonyaman.id/",
+    "linkedin_handle": "hallonyaman.id",
+    "linkedin_url": ""
   },
   "projects": [
     {
@@ -35,5 +38,10 @@
       "description_id": "Contoh dokumentasi aktivitas event korporat.",
       "category": "Event, MICE & Hospitality"
     }
-  ]
+  ],
+  "analytics": {
+    "ga4_measurement_id": "",
+    "looker_studio_embed_url": "",
+    "google_search_console_url": "https://search.google.com/search-console/"
+  }
 }
