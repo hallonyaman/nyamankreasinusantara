@@ -1,48 +1,204 @@
-- label: "Company"
-  name: "company"
-  widget: "object"
+backend:
+  name: git-gateway
+  branch: main
 
-  fields:
-    - label: "Company Name"
-      name: "name"
-      widget: "string"
+media_folder: "uploads"
+public_folder: "/uploads"
 
-    - label: "Tagline"
-      name: "tagline"
-      widget: "string"
+site_url: "https://nyamankreasinusantara.netlify.app"
+display_url: "https://nyamankreasinusantara.netlify.app"
 
-    - label: "Email"
-      name: "email"
-      widget: "string"
+collections:
+  - name: "website"
+    label: "NYAMAN Website"
 
-    - label: "WhatsApp Number"
-      name: "whatsapp_number"
-      widget: "string"
+    files:
+      - name: "site"
+        label: "Projects & Company"
+        file: "content/site.json"
+        format: "json"
 
-    - label: "Location Indonesia"
-      name: "location_id"
-      widget: "string"
+        fields:
 
-    - label: "Location English"
-      name: "location_en"
-      widget: "string"
+          # =====================================
+          # COMPANY INFORMATION
+          # =====================================
 
-    - label: "Instagram Handle"
-      name: "instagram_handle"
-      widget: "string"
-      required: false
+          - label: "Company"
+            name: "company"
+            widget: "object"
 
-    - label: "Instagram URL"
-      name: "instagram_url"
-      widget: "string"
-      required: false
+            fields:
+              - label: "Company Name"
+                name: "name"
+                widget: "string"
 
-    - label: "LinkedIn Handle"
-      name: "linkedin_handle"
-      widget: "string"
-      required: false
+              - label: "Tagline"
+                name: "tagline"
+                widget: "string"
 
-    - label: "LinkedIn URL"
-      name: "linkedin_url"
-      widget: "string"
-      required: false
+              - label: "Email"
+                name: "email"
+                widget: "string"
+
+              - label: "WhatsApp Number"
+                name: "whatsapp_number"
+                widget: "string"
+
+              - label: "Location Indonesia"
+                name: "location_id"
+                widget: "string"
+
+              - label: "Location English"
+                name: "location_en"
+                widget: "string"
+
+              - label: "Instagram Handle"
+                name: "instagram_handle"
+                widget: "string"
+                required: false
+
+              - label: "Instagram URL"
+                name: "instagram_url"
+                widget: "string"
+                required: false
+
+              - label: "LinkedIn Handle"
+                name: "linkedin_handle"
+                widget: "string"
+                required: false
+
+              - label: "LinkedIn URL"
+                name: "linkedin_url"
+                widget: "string"
+                required: false
+
+
+          # =====================================
+          # ANALYTICS / OWNER DASHBOARD
+          # =====================================
+
+          - label: "Analytics"
+            name: "analytics"
+            widget: "object"
+            required: false
+
+            fields:
+              - label: "GA4 Measurement ID"
+                name: "ga4_measurement_id"
+                widget: "string"
+                required: false
+                hint: "Contoh: G-XXXXXXXXXX"
+
+              - label: "Looker Studio Embed URL"
+                name: "looker_studio_embed_url"
+                widget: "string"
+                required: false
+                hint: "Isi setelah dashboard Looker Studio dibuat."
+
+              - label: "Google Search Console URL"
+                name: "google_search_console_url"
+                widget: "string"
+                required: false
+
+
+          # =====================================
+          # PROJECTS
+          # =====================================
+
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            summary: "{{fields.title_id}} — {{fields.location}}"
+
+            fields:
+
+              - label: "Project Title (ID)"
+                name: "title_id"
+                widget: "string"
+
+              - label: "Project Title (EN)"
+                name: "title_en"
+                widget: "string"
+
+              - label: "Client"
+                name: "client"
+                widget: "string"
+                required: false
+
+              - label: "Show Client Name"
+                name: "show_client"
+                widget: "boolean"
+                default: false
+
+              - label: "Category"
+                name: "category"
+                widget: "select"
+
+                options:
+                  - "General Procurement & Trading"
+                  - "Creative, Branding & Advertising"
+                  - "Event, MICE & Hospitality"
+                  - "Digital & Technology Solutions"
+                  - "Facility, Manpower & Operational Support"
+                  - "Project & Technical Support"
+
+              - label: "Location"
+                name: "location"
+                widget: "string"
+
+              - label: "Project Date"
+                name: "date"
+                widget: "datetime"
+                format: "YYYY-MM"
+                date_format: "MMMM YYYY"
+                time_format: false
+
+              - label: "Description (ID)"
+                name: "description_id"
+                widget: "text"
+
+              - label: "Description (EN)"
+                name: "description_en"
+                widget: "text"
+
+
+              # =================================
+              # MAIN COVER
+              # =================================
+
+              - label: "Cover Photo"
+                name: "cover"
+                widget: "image"
+
+
+              # =================================
+              # PROJECT GALLERY
+              # =================================
+
+              - label: "Project Gallery"
+                name: "gallery"
+                widget: "list"
+                required: false
+                summary: "{{fields.caption}}"
+
+                fields:
+
+                  - label: "Photo"
+                    name: "image"
+                    widget: "image"
+
+                  - label: "Caption"
+                    name: "caption"
+                    widget: "string"
+                    required: false
+
+
+              # =================================
+              # FEATURED
+              # =================================
+
+              - label: "Featured on Homepage"
+                name: "featured"
+                widget: "boolean"
+                default: true
