@@ -57,6 +57,54 @@ collections:
                 name: "location_en"
                 widget: "string"
 
+              - label: "Instagram Handle"
+                name: "instagram_handle"
+                widget: "string"
+                required: false
+
+              - label: "Instagram URL"
+                name: "instagram_url"
+                widget: "string"
+                required: false
+
+              - label: "LinkedIn Handle"
+                name: "linkedin_handle"
+                widget: "string"
+                required: false
+
+              - label: "LinkedIn URL"
+                name: "linkedin_url"
+                widget: "string"
+                required: false
+
+
+          # =====================================
+          # ANALYTICS / OWNER DASHBOARD
+          # =====================================
+
+          - label: "Analytics"
+            name: "analytics"
+            widget: "object"
+            required: false
+
+            fields:
+              - label: "GA4 Measurement ID"
+                name: "ga4_measurement_id"
+                widget: "string"
+                required: false
+                hint: "Contoh: G-XXXXXXXXXX"
+
+              - label: "Looker Studio Embed URL"
+                name: "looker_studio_embed_url"
+                widget: "string"
+                required: false
+                hint: "Isi setelah dashboard Looker Studio dibuat."
+
+              - label: "Google Search Console URL"
+                name: "google_search_console_url"
+                widget: "string"
+                required: false
+
 
           # =====================================
           # PROJECTS
