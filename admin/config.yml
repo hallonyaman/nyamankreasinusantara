@@ -88,7 +88,8 @@ collections:
                 name: "ga4_measurement_id"
                 widget: "string"
                 required: false
-                hint: "Contoh: G-XXXXXXXXXX"
+                default: "G-7W3JTQXTSY"
+                hint: "Google Analytics 4 Measurement ID"
 
               - label: "Looker Studio Embed URL"
                 name: "looker_studio_embed_url"
