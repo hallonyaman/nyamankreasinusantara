@@ -26,7 +26,7 @@
         }
       ],
       "location": "Surabaya, Jawa Timur",
-      "cover": "/uploads/whatsapp-image-2026-10-01-at-11.48.15.jpeg",
+      "cover": "/uploads/Whatsapp-Image-2026-10-01-at-11.48.15.jpeg",
       "description_id": "Dukungan aktivasi Teras Adem Aqua melalui penyediaan dan instalasi booth, materi branding, serta kebutuhan pendukung di area kegiatan. Pelaksanaan difokuskan pada kesiapan lokasi, konsistensi visual brand, dan koordinasi eksekusi agar aktivitas berjalan rapi dan sesuai kebutuhan klien.",
       "category": "Creative, Branding & Advertising"
     },
@@ -57,7 +57,7 @@
     },
     {
       "title_id": "Design & Interior Fit Out",
-      "client": "Tiga Naga Berjaya ",
+      "client": "Tiga Naga Berjaya",
       "description_en": "Interior work for a commercial space with a focus on functionality, visual neatness, and efficient use of space. The scope included interior arrangement, finishing work, and space adjustments to create a more representative and comfortable environment.",
       "show_client": true,
       "featured": true,
@@ -104,7 +104,7 @@
       "title_en": "Hardware Procurement and IT Support",
       "location": "Pulau Jawa",
       "cover": "/uploads/penyediaan-hardware-lasbon-tech-2.jpeg",
-      "description_id": "Penyediaan perangkat dan kebutuhan hardware yang dibutuhkan oleh Lasbon Tech. Proses meliputi identifikasi kebutuhan, sourcing produk, pengecekan kesesuaian spesifikasi, serta penyiapan barang sebelum diserahkan kepada klien",
+      "description_id": "Penyediaan perangkat dan kebutuhan hardware yang dibutuhkan oleh Lasbon Tech. Proses meliputi identifikasi kebutuhan, sourcing produk, pengecekan kesesuaian spesifikasi, serta penyiapan barang sebelum diserahkan kepada klien.",
       "category": "Digital & Technology Solutions"
     },
     {
@@ -124,7 +124,7 @@
       "title_id": "Produksi PIN & Name Tag Custom",
       "client": "Confidential Client",
       "description_en": "Production of custom pins and name tags for corporate identity and event requirements. The design was tailored to the client’s brand and produced with attention to visual detail, color consistency, and a clean final finish.",
-      "show_client": true,
+      "show_client": false,
       "featured": true,
       "date": "2026-10",
       "title_en": "Custom Pin and Name Tag Production",
@@ -135,7 +135,7 @@
     }
   ],
   "analytics": {
-    "ga4_measurement_id": "",
+    "ga4_measurement_id": "G-7W3JTQXTSY",
     "looker_studio_embed_url": "",
     "google_search_console_url": "https://search.google.com/search-console/"
   }

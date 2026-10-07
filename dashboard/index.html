@@ -3,78 +3,615 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="robots" content="noindex,nofollow">
+
   <title>NYAMAN Owner Dashboard</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
   <script src="https://cdn.tailwindcss.com"></script>
+
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script>tailwind.config={theme:{extend:{colors:{nyaman:{navy:'#0B2546',dark:'#061A32',darker:'#041426',gold:'#C9A46A',goldLight:'#E3C99D',soft:'#F4F6F8',muted:'#667085'}}},fontFamily:{sans:['Montserrat','sans-serif']}}}</script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            nyaman: {
+              navy: '#0B2546',
+              dark: '#061A32',
+              darker: '#041426',
+              gold: '#C9A46A',
+              goldLight: '#E3C99D',
+              soft: '#F4F6F8',
+              muted: '#667085'
+            }
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
 </head>
+
 <body class="font-sans bg-nyaman-soft text-slate-800 min-h-screen">
+
+  <!-- HEADER -->
   <header class="bg-nyaman-dark text-white border-b border-white/10">
+
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-      <div><strong class="tracking-[.15em]">NYAMAN<span class="text-nyaman-gold">.</span></strong><span class="text-white/40 text-xs ml-3">OWNER DASHBOARD</span></div>
-      <div class="flex gap-4 text-xs"><a href="/admin/" class="hover:text-nyaman-goldLight">CMS</a><a href="/" class="hover:text-nyaman-goldLight">Website</a><button id="logout" class="hover:text-nyaman-goldLight">Logout</button></div>
+
+      <div>
+        <strong class="tracking-[.15em]">
+          NYAMAN<span class="text-nyaman-gold">.</span>
+        </strong>
+
+        <span class="text-white/40 text-xs ml-3">
+          OWNER DASHBOARD
+        </span>
+      </div>
+
+      <div class="flex gap-4 text-xs">
+
+        <a
+          href="/admin/"
+          class="hover:text-nyaman-goldLight"
+        >
+          CMS
+        </a>
+
+        <a
+          href="/"
+          class="hover:text-nyaman-goldLight"
+        >
+          Website
+        </a>
+
+        <button
+          id="logout"
+          class="hover:text-nyaman-goldLight"
+          type="button"
+        >
+          Logout
+        </button>
+
+      </div>
+
     </div>
+
   </header>
 
-  <main id="dashboard" class="max-w-7xl mx-auto px-6 py-10 hidden">
+
+  <!-- DASHBOARD -->
+  <main
+    id="dashboard"
+    class="max-w-7xl mx-auto px-6 py-10 hidden"
+  >
+
     <div class="mb-8">
-      <p class="text-nyaman-gold text-xs font-bold tracking-[.16em] uppercase mb-2">Website Intelligence</p>
-      <h1 class="text-3xl md:text-4xl font-extrabold text-nyaman-navy">Owner Dashboard</h1>
-      <p class="text-nyaman-muted mt-2 text-sm">Analytics akan tampil di sini setelah GA4 dan Looker Studio dihubungkan satu kali.</p>
+
+      <p class="text-nyaman-gold text-xs font-bold tracking-[.16em] uppercase mb-2">
+        Website Intelligence
+      </p>
+
+      <h1 class="text-3xl md:text-4xl font-extrabold text-nyaman-navy">
+        Owner Dashboard
+      </h1>
+
+      <p class="text-nyaman-muted mt-2 text-sm">
+        Monitoring website, leads, content, dan analytics CV Nyaman Kreasi Nusantara.
+      </p>
+
     </div>
 
+
+    <!-- STATUS CARDS -->
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
-      <div class="bg-white p-6 border border-black/5"><p class="text-xs text-nyaman-muted">Tracking</p><p id="ga-status" class="font-bold text-nyaman-navy mt-2">Checking...</p></div>
-      <div class="bg-white p-6 border border-black/5"><p class="text-xs text-nyaman-muted">RFQ</p><p class="font-bold text-nyaman-navy mt-2">Netlify Forms Ready</p></div>
-      <div class="bg-white p-6 border border-black/5"><p class="text-xs text-nyaman-muted">Project CMS</p><p class="font-bold text-nyaman-navy mt-2">Active</p></div>
-      <div class="bg-white p-6 border border-black/5"><p class="text-xs text-nyaman-muted">Tracked CTA</p><p class="font-bold text-nyaman-navy mt-2">WhatsApp · RFQ · Social</p></div>
+
+      <div class="bg-white p-6 border border-black/5">
+
+        <p class="text-xs text-nyaman-muted">
+          Google Analytics
+        </p>
+
+        <p
+          id="ga-status"
+          class="font-bold text-nyaman-navy mt-2"
+        >
+          Checking...
+        </p>
+
+      </div>
+
+
+      <div class="bg-white p-6 border border-black/5">
+
+        <p class="text-xs text-nyaman-muted">
+          RFQ
+        </p>
+
+        <p class="font-bold text-nyaman-navy mt-2">
+          Netlify Forms
+        </p>
+
+      </div>
+
+
+      <div class="bg-white p-6 border border-black/5">
+
+        <p class="text-xs text-nyaman-muted">
+          Project CMS
+        </p>
+
+        <p class="font-bold text-nyaman-navy mt-2">
+          Active
+        </p>
+
+      </div>
+
+
+      <div class="bg-white p-6 border border-black/5">
+
+        <p class="text-xs text-nyaman-muted">
+          Tracked Actions
+        </p>
+
+        <p class="font-bold text-nyaman-navy mt-2">
+          CTA · RFQ · Social · Project
+        </p>
+
+      </div>
+
     </div>
 
+
+    <!-- ANALYTICS -->
     <section class="bg-white border border-black/5 overflow-hidden mb-8">
+
       <div class="p-6 border-b border-black/5 flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div><h2 class="font-bold text-nyaman-navy">Website Analytics</h2><p class="text-xs text-nyaman-muted mt-1">Visitors, traffic sources, device, top pages, CTA & conversion.</p></div>
-        <div class="flex gap-3 text-xs"><a href="https://analytics.google.com/" target="_blank" rel="noopener" class="bg-nyaman-navy text-white px-4 py-3 font-bold">OPEN GA4</a><a href="https://search.google.com/search-console/" target="_blank" rel="noopener" class="border border-slate-200 px-4 py-3 font-bold text-nyaman-navy">SEARCH CONSOLE</a></div>
+
+        <div>
+
+          <h2 class="font-bold text-nyaman-navy">
+            Website Analytics
+          </h2>
+
+          <p class="text-xs text-nyaman-muted mt-1">
+            Visitors, traffic sources, device, project views, CTA dan conversion.
+          </p>
+
+        </div>
+
+
+        <div class="flex flex-wrap gap-3 text-xs">
+
+          <a
+            href="https://analytics.google.com/"
+            target="_blank"
+            rel="noopener"
+            class="bg-nyaman-navy text-white px-4 py-3 font-bold"
+          >
+            OPEN GA4
+          </a>
+
+
+          <a
+            href="https://search.google.com/search-console/"
+            target="_blank"
+            rel="noopener"
+            class="border border-slate-200 px-4 py-3 font-bold text-nyaman-navy"
+          >
+            SEARCH CONSOLE
+          </a>
+
+        </div>
+
       </div>
-      <div id="analytics-container" class="min-h-[420px] flex items-center justify-center bg-slate-50">
-        <div class="max-w-xl text-center p-8"><p class="font-bold text-nyaman-navy">Dashboard analytics belum dihubungkan.</p><p class="text-sm text-nyaman-muted mt-3 leading-6">Setelah Anda membuat GA4 dan Looker Studio, paste Measurement ID dan Embed URL melalui CMS → Projects & Company → Analytics. Setelah itu report akan tampil otomatis di halaman ini.</p></div>
+
+
+      <div
+        id="analytics-container"
+        class="min-h-[420px] flex items-center justify-center bg-slate-50"
+      >
+
+        <div class="max-w-xl text-center p-8">
+
+          <p class="font-bold text-nyaman-navy">
+            Dashboard analytics belum dihubungkan.
+          </p>
+
+          <p class="text-sm text-nyaman-muted mt-3 leading-6">
+            Google Analytics sudah disiapkan.
+            Setelah Looker Studio dibuat dan Embed URL dimasukkan melalui CMS,
+            report analytics akan tampil otomatis di halaman ini.
+          </p>
+
+        </div>
+
       </div>
+
     </section>
 
+
+    <!-- QUICK ACCESS -->
     <div class="grid md:grid-cols-3 gap-5">
-      <a href="/admin/" class="bg-white p-6 border border-black/5 hover:border-nyaman-gold transition"><p class="text-xs text-nyaman-gold font-bold">CONTENT</p><h3 class="font-bold text-nyaman-navy mt-2">Kelola Projects & Foto</h3><p class="text-xs text-nyaman-muted mt-2">Tambah project, gallery, client, description dan featured status.</p></a>
-      <a href="https://app.netlify.com/" target="_blank" rel="noopener" class="bg-white p-6 border border-black/5 hover:border-nyaman-gold transition"><p class="text-xs text-nyaman-gold font-bold">LEADS</p><h3 class="font-bold text-nyaman-navy mt-2">RFQ Submissions</h3><p class="text-xs text-nyaman-muted mt-2">Buka Netlify untuk melihat form submissions dan mengatur email notification.</p></a>
-      <a href="/" class="bg-white p-6 border border-black/5 hover:border-nyaman-gold transition"><p class="text-xs text-nyaman-gold font-bold">PUBLIC</p><h3 class="font-bold text-nyaman-navy mt-2">Buka Website</h3><p class="text-xs text-nyaman-muted mt-2">Review tampilan public website setelah melakukan perubahan.</p></a>
+
+      <a
+        href="/admin/"
+        class="bg-white p-6 border border-black/5 hover:border-nyaman-gold transition"
+      >
+
+        <p class="text-xs text-nyaman-gold font-bold">
+          CONTENT
+        </p>
+
+        <h3 class="font-bold text-nyaman-navy mt-2">
+          Kelola Projects & Foto
+        </h3>
+
+        <p class="text-xs text-nyaman-muted mt-2">
+          Tambah project, gallery, client, description dan featured status.
+        </p>
+
+      </a>
+
+
+      <a
+        href="https://app.netlify.com/"
+        target="_blank"
+        rel="noopener"
+        class="bg-white p-6 border border-black/5 hover:border-nyaman-gold transition"
+      >
+
+        <p class="text-xs text-nyaman-gold font-bold">
+          LEADS
+        </p>
+
+        <h3 class="font-bold text-nyaman-navy mt-2">
+          RFQ Submissions
+        </h3>
+
+        <p class="text-xs text-nyaman-muted mt-2">
+          Buka Netlify untuk melihat form submissions dan mengatur email notification.
+        </p>
+
+      </a>
+
+
+      <a
+        href="/"
+        class="bg-white p-6 border border-black/5 hover:border-nyaman-gold transition"
+      >
+
+        <p class="text-xs text-nyaman-gold font-bold">
+          PUBLIC
+        </p>
+
+        <h3 class="font-bold text-nyaman-navy mt-2">
+          Buka Website
+        </h3>
+
+        <p class="text-xs text-nyaman-muted mt-2">
+          Review tampilan public website setelah melakukan perubahan.
+        </p>
+
+      </a>
+
     </div>
+
   </main>
 
-  <div id="login-state" class="min-h-[70vh] flex items-center justify-center px-6"><div class="text-center"><p class="font-bold text-nyaman-navy">Memeriksa login...</p></div></div>
 
-<script>
-  const dashboard=document.getElementById('dashboard');
-  const loginState=document.getElementById('login-state');
-  function showDashboard(){dashboard.classList.remove('hidden');loginState.classList.add('hidden');}
-  function requireLogin(){
-    loginState.innerHTML='<div class="text-center"><p class="font-bold text-[#0B2546]">Login diperlukan</p><p class="text-sm text-[#667085] mt-2 mb-5">Gunakan akun Identity yang sama dengan CMS.</p><button id="login-btn" class="bg-[#C9A46A] text-[#061A32] px-6 py-3 text-xs font-bold">LOGIN</button></div>';
-    document.getElementById('login-btn').onclick=()=>window.netlifyIdentity.open('login');
-  }
-  if(window.netlifyIdentity){
-    window.netlifyIdentity.on('init',user=>user?showDashboard():requireLogin());
-    window.netlifyIdentity.on('login',()=>{window.netlifyIdentity.close();showDashboard();});
-  } else {requireLogin();}
-  document.getElementById('logout').onclick=()=>window.netlifyIdentity&&window.netlifyIdentity.logout();
-  if(window.netlifyIdentity) window.netlifyIdentity.on('logout',()=>location.reload());
+  <!-- LOGIN STATE -->
+  <div
+    id="login-state"
+    class="min-h-[70vh] flex items-center justify-center px-6"
+  >
 
-  fetch('/content/site.json?d='+Date.now()).then(r=>r.json()).then(data=>{
-    const analytics=data.analytics||{};
-    document.getElementById('ga-status').textContent=analytics.ga4_measurement_id?'GA4 Connected':'GA4 Not Connected';
-    if(analytics.looker_studio_embed_url){
-      document.getElementById('analytics-container').innerHTML='<iframe title="NYAMAN Analytics" src="'+analytics.looker_studio_embed_url+'" class="w-full min-h-[620px] border-0" loading="lazy" allowfullscreen></iframe>';
+    <div class="text-center">
+      <p class="font-bold text-nyaman-navy">
+        Memeriksa login...
+      </p>
+    </div>
+
+  </div>
+
+
+  <script>
+    const dashboard =
+      document.getElementById("dashboard");
+
+    const loginState =
+      document.getElementById("login-state");
+
+    const logoutButton =
+      document.getElementById("logout");
+
+
+    function showDashboard() {
+
+      dashboard.classList.remove("hidden");
+
+      loginState.classList.add("hidden");
+
     }
-  }).catch(()=>{document.getElementById('ga-status').textContent='Setup Required';});
-</script>
+
+
+    function requireLogin() {
+
+      dashboard.classList.add("hidden");
+
+      loginState.classList.remove("hidden");
+
+
+      loginState.innerHTML = `
+        <div class="text-center">
+
+          <p class="font-bold text-[#0B2546]">
+            Login diperlukan
+          </p>
+
+          <p class="text-sm text-[#667085] mt-2 mb-5">
+            Gunakan akun Identity yang sama dengan CMS.
+          </p>
+
+          <button
+            id="login-btn"
+            type="button"
+            class="bg-[#C9A46A] text-[#061A32] px-6 py-3 text-xs font-bold"
+          >
+            LOGIN
+          </button>
+
+        </div>
+      `;
+
+
+      const loginButton =
+        document.getElementById("login-btn");
+
+
+      if (loginButton) {
+
+        loginButton.onclick = function () {
+
+          if (window.netlifyIdentity) {
+
+            window.netlifyIdentity.open("login");
+
+          }
+
+        };
+
+      }
+
+    }
+
+
+    if (window.netlifyIdentity) {
+
+      window.netlifyIdentity.on(
+        "init",
+        user => {
+
+          if (user) {
+            showDashboard();
+          } else {
+            requireLogin();
+          }
+
+        }
+      );
+
+
+      window.netlifyIdentity.on(
+        "login",
+        () => {
+
+          window.netlifyIdentity.close();
+
+          showDashboard();
+
+        }
+      );
+
+
+      window.netlifyIdentity.on(
+        "logout",
+        () => {
+
+          window.location.reload();
+
+        }
+      );
+
+    } else {
+
+      requireLogin();
+
+    }
+
+
+    if (logoutButton) {
+
+      logoutButton.onclick = function () {
+
+        if (window.netlifyIdentity) {
+
+          window.netlifyIdentity.logout();
+
+        }
+
+      };
+
+    }
+
+
+    async function loadDashboardSettings() {
+
+      const gaStatus =
+        document.getElementById("ga-status");
+
+      const analyticsContainer =
+        document.getElementById("analytics-container");
+
+
+      try {
+
+        const response = await fetch(
+          "/content/site.json?dashboard=" +
+          Date.now(),
+          {
+            cache: "no-store"
+          }
+        );
+
+
+        if (!response.ok) {
+
+          throw new Error(
+            "Unable to load dashboard settings"
+          );
+
+        }
+
+
+        const data =
+          await response.json();
+
+
+        const analytics =
+          data.analytics || {};
+
+
+        const measurementId =
+          (
+            analytics.ga4_measurement_id ||
+            "G-7W3JTQXTSY"
+          ).trim();
+
+
+        if (
+          /^G-[A-Z0-9]+$/i.test(
+            measurementId
+          )
+        ) {
+
+          gaStatus.textContent =
+            "GA4 Connected";
+
+        } else {
+
+          gaStatus.textContent =
+            "GA4 Setup Required";
+
+        }
+
+
+        const embedUrl =
+          (
+            analytics.looker_studio_embed_url ||
+            ""
+          ).trim();
+
+
+        if (embedUrl) {
+
+          let validUrl = "";
+
+
+          try {
+
+            const url =
+              new URL(embedUrl);
+
+
+            if (
+              url.protocol === "https:"
+            ) {
+
+              validUrl =
+                url.href;
+
+            }
+
+          } catch (error) {
+
+            console.warn(
+              "Invalid Looker Studio URL"
+            );
+
+          }
+
+
+          if (validUrl) {
+
+            const iframe =
+              document.createElement(
+                "iframe"
+              );
+
+
+            iframe.title =
+              "NYAMAN Analytics";
+
+
+            iframe.src =
+              validUrl;
+
+
+            iframe.className =
+              "w-full min-h-[620px] border-0";
+
+
+            iframe.loading =
+              "lazy";
+
+
+            iframe.allowFullscreen =
+              true;
+
+
+            analyticsContainer.innerHTML =
+              "";
+
+
+            analyticsContainer.appendChild(
+              iframe
+            );
+
+          }
+
+        }
+
+      } catch (error) {
+
+        console.error(
+          "Unable to load dashboard settings",
+          error
+        );
+
+
+        gaStatus.textContent =
+          "Setup Required";
+
+      }
+
+    }
+
+
+    loadDashboardSettings();
+  </script>
+
 </body>
 </html>
